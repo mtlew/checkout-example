@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace app\modules\cart\src\receipt\_base;
 
 
-interface DiscountableInterface
+interface IDiscountable
 {
 
     public function getPrice(): ?int;

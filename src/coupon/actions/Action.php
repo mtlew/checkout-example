@@ -6,7 +6,7 @@ namespace app\modules\cart\src\coupon\actions;
 
 
 use app\modules\cart\src\coupon\discount\Discount;
-use app\modules\cart\src\receipt\_base\DiscountableInterface;
+use app\modules\cart\src\receipt\_base\IDiscountable;
 
 abstract class Action
 {
@@ -19,5 +19,5 @@ abstract class Action
         $this->discountType = $discountType;
     }
 
-    abstract public function run(DiscountableInterface $receiptItem): void;
+    abstract public function run(IDiscountable $receiptItem): void;
 }

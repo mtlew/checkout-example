@@ -6,7 +6,7 @@ namespace app\modules\cart\src\receipt;
 
 
 use app\modules\cart\src\coupon\Coupon;
-use app\modules\cart\src\receipt\_base\DiscountableInterface;
+use app\modules\cart\src\receipt\_base\IDiscountable;
 
 class Receipt
 {
@@ -66,7 +66,7 @@ class Receipt
 
 
     /**
-     * @return DiscountableInterface[]
+     * @return IDiscountable[]
      */
     protected function getDiscountableProperties(): array
     {

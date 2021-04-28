@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace app\modules\cart\src\receipt\_base;
 
 
-abstract class Discountable implements DiscountableInterface
+abstract class Discountable implements IDiscountable
 {
 
     protected $price;

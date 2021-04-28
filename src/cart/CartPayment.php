@@ -7,7 +7,7 @@ namespace app\modules\cart\src\cart;
 
 use app\modules\cart\src\cart\_base\CartListItem;
 use app\modules\cart\src\cart\_base\Discountable;
-use app\modules\cart\src\receipt\_base\DiscountableInterface as DiscountableReceipt;
+use app\modules\cart\src\receipt\_base\IDiscountable as DiscountableReceipt;
 
 class CartPayment extends Discountable
 {
