@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace app\modules\cart\src\coupon\product;
 
 
-use app\modules\cart\src\coupon\product\rule\Rule;
+use app\modules\cart\src\coupon\product\rule\IRule;
 use app\modules\cart\src\receipt\ReceiptProduct;
 
 class ProductFilter
@@ -14,7 +14,7 @@ class ProductFilter
     protected $rules;
 
 
-    public function __construct(Rule ...$rules)
+    public function __construct(IRule ...$rules)
     {
         $this->rules = $rules;
     }
@@ -28,7 +28,7 @@ class ProductFilter
         return $items;
     }
 
-    protected function filterByRule(Rule $rule, ReceiptProduct ...$items): array
+    protected function filterByRule(IRule $rule, ReceiptProduct ...$items): array
     {
         $result = [];
 

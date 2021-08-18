@@ -7,7 +7,7 @@ namespace app\modules\cart\src\coupon\conditions\rules;
 
 use app\modules\cart\src\receipt\ReceiptProductList;
 
-interface Rule
+interface IRule
 {
     public function isFollowing(ReceiptProductList $receiptProductList): bool;
 }

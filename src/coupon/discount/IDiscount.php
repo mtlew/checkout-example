@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace app\modules\cart\src\coupon\discount;
 
 
-interface Discount
+interface IDiscount
 {
     public function __construct(int $value, bool $multiple);
 

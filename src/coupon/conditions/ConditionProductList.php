@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace app\modules\cart\src\coupon\conditions;
 
 
-use app\modules\cart\src\coupon\conditions\rules\Rule;
+use app\modules\cart\src\coupon\conditions\rules\IRule;
 use app\modules\cart\src\receipt\ReceiptProductList;
 
 class ConditionProductList
@@ -14,7 +14,7 @@ class ConditionProductList
     protected $rules;
 
 
-    public function __construct(Rule ...$rules)
+    public function __construct(IRule ...$rules)
     {
         $this->rules = $rules;
     }

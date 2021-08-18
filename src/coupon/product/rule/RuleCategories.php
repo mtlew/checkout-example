@@ -7,7 +7,7 @@ namespace app\modules\cart\src\coupon\product\rule;
 
 use app\modules\cart\src\receipt\ReceiptProduct;
 
-class RuleCategories implements Rule
+class RuleCategories implements IRule
 {
 
     protected $IDs;

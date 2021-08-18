@@ -6,7 +6,7 @@ namespace app\modules\cart\factory\coupon\product;
 
 
 use app\models\entities\PromoCodeEntity;
-use app\modules\cart\src\coupon\product\rule\Rule;
+use app\modules\cart\src\coupon\product\rule\IRule;
 use app\modules\cart\src\coupon\product\rule\RuleCategories;
 use app\modules\cart\src\coupon\product\rule\RuleProducts;
 use app\modules\cart\src\coupon\product\rule\RulePromo;
@@ -17,7 +17,7 @@ class ProductFilterRulesFactory
     /**
      * @param string $discountRule
      * @param object $options
-     * @return Rule[]
+     * @return IRule[]
      */
     public function create(string $discountRule, object $options): array
     {

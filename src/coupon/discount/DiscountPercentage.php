@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace app\modules\cart\src\coupon\discount;
 
 
-class DiscountPercentage implements Discount
+class DiscountPercentage implements IDiscount
 {
 
     protected $percentage;

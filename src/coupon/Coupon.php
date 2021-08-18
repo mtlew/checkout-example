@@ -8,7 +8,7 @@ namespace app\modules\cart\src\coupon;
 use app\modules\cart\src\coupon\actions\Action;
 use app\modules\cart\src\coupon\actions\ActionDiscountByType;
 use app\modules\cart\src\coupon\conditions\Conditions;
-use app\modules\cart\src\coupon\discount\Discount;
+use app\modules\cart\src\coupon\discount\IDiscount;
 use app\modules\cart\src\coupon\product\ProductFilter;
 
 abstract class Coupon
@@ -53,7 +53,7 @@ abstract class Coupon
         return $this->createDiscountAction($this->actionDeliveryClass);
     }
 
-    protected function createDiscount(int $value): Discount
+    protected function createDiscount(int $value): IDiscount
     {
         return new $this->discountClass($value, !is_null($this->getProductFilter()));
     }

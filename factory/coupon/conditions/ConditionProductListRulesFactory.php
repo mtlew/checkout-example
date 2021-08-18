@@ -7,7 +7,7 @@ namespace app\modules\cart\factory\coupon\conditions;
 
 use app\models\entities\PromoCodeEntity;
 use app\modules\cart\src\coupon\conditions\rules\productList\RulePricePromo;
-use app\modules\cart\src\coupon\conditions\rules\Rule;
+use app\modules\cart\src\coupon\conditions\rules\IRule;
 use app\modules\cart\src\coupon\conditions\rules\productList\RulePrice;
 
 class ConditionProductListRulesFactory
@@ -16,7 +16,7 @@ class ConditionProductListRulesFactory
     /**
      * @param string $discountRule
      * @param object $options
-     * @return Rule[]
+     * @return IRule[]
      */
     public function create(string $discountRule, object $options): array
     {

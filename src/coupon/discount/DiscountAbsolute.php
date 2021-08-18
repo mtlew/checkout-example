@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace app\modules\cart\src\coupon\discount;
 
 
-class DiscountAbsolute implements Discount
+class DiscountAbsolute implements IDiscount
 {
 
     protected $value;
